@@ -8,9 +8,10 @@ public class FollowPlayer : MonoBehaviour
     public Vector3 offset;
 
     // Update is called once per frame
-    void FixedUpdate()
-    {
-        this.transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.x, this.transform.position.z);
-        
+    void Update()
+    {   
+        this.transform.position = new Vector3(player.position.x + offset.x, this.transform.position.y, this.transform.position.z);
     }
+        
+        
 }
