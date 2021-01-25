@@ -313,6 +313,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6312176132617559673, guid: 41e4d6b3cf96c6b46aacdc1f416d32c5,
         type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6312176132617559673, guid: 41e4d6b3cf96c6b46aacdc1f416d32c5,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.88492465
       objectReference: {fileID: 0}
@@ -324,7 +329,7 @@ PrefabInstance:
     - target: {fileID: 6312176132617559673, guid: 41e4d6b3cf96c6b46aacdc1f416d32c5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6312176132617559673, guid: 41e4d6b3cf96c6b46aacdc1f416d32c5,
         type: 3}
@@ -429,6 +434,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blaze
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741256094215850126, guid: 63d0f3a338bfd0c4c8edffed732c6498,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.2074975
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741256094215850126, guid: 63d0f3a338bfd0c4c8edffed732c6498,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.23248227
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741256094215850126, guid: 63d0f3a338bfd0c4c8edffed732c6498,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.018753752
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741256094215850126, guid: 63d0f3a338bfd0c4c8edffed732c6498,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.053135656
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63d0f3a338bfd0c4c8edffed732c6498, type: 3}
