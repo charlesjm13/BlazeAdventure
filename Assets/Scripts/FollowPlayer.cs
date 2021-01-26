@@ -12,7 +12,7 @@ public class FollowPlayer : MonoBehaviour
     {
         if (this.player.position.y > 1.5)
         {
-            this.transform.position = new Vector3(player.position.x + offset.x, this.player.position.y - 1, this.transform.position.z);
+            this.transform.position = new Vector3(player.position.x + offset.x, this.player.position.y - (float)0.5, this.transform.position.z);
         }
         else
         {
