@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9042100263351299914}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CrateTower 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

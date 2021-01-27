@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8299574032414948600}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlatformWithSpikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7818221565062068981}
   - component: {fileID: 7818221565062068982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: skulls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 7818221565809983386}
   - component: {fileID: 7818221565809983388}
   - component: {fileID: 7818221565809983387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spikes-top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 7818221565867590224}
   - component: {fileID: 7818221565867590226}
   - component: {fileID: 7818221565867590225}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spikes-top (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7818221566069116366}
   - component: {fileID: 7818221566069116367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: skulls (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,10 +418,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8299574032414948600}
     m_Modifications:
+    - target: {fileID: 373801356585361518, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485047592174252385, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6902979480024774694, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
         type: 3}
       propertyPath: m_Name
       value: SpikeTrap
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902979480024774694, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800438921584116408, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8019770578804884211, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
         type: 3}
