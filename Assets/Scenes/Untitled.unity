@@ -217,6 +217,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: crate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1855269089784329857, guid: dd9bca31fa60dc84fbf4ea71d48b081b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1855269089784329980, guid: dd9bca31fa60dc84fbf4ea71d48b081b,
         type: 3}
       propertyPath: m_RootOrder
@@ -388,6 +393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: crate
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855269089784329857, guid: dd9bca31fa60dc84fbf4ea71d48b081b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1855269089784329980, guid: dd9bca31fa60dc84fbf4ea71d48b081b,
         type: 3}
@@ -640,6 +650,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrassyPlatform (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 731383664074894149, guid: 71caaa524c4b6f140a6dae8b73e6d225,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5581938585561692309, guid: 71caaa524c4b6f140a6dae8b73e6d225,
         type: 3}
       propertyPath: m_RootOrder
@@ -740,6 +755,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GrassyPlatform (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 731383664074894149, guid: 71caaa524c4b6f140a6dae8b73e6d225,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5581938585561692309, guid: 71caaa524c4b6f140a6dae8b73e6d225,
         type: 3}
@@ -958,6 +978,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bush
       objectReference: {fileID: 0}
+    - target: {fileID: 3194887327755313963, guid: 265009d1844253d4f8a639e3692434bc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4585470815101937741, guid: 265009d1844253d4f8a639e3692434bc,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1031,6 +1056,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043951610887497025, guid: f5a158888c54be447ba0f82575f6cb59,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 3043951610887497026, guid: f5a158888c54be447ba0f82575f6cb59,
         type: 3}
@@ -1279,6 +1309,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrateTower
       objectReference: {fileID: 0}
+    - target: {fileID: 8454938118031237524, guid: b434bd49880dbc74ea5ef576ae30db65,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 9042100263351299914, guid: b434bd49880dbc74ea5ef576ae30db65,
         type: 3}
       propertyPath: m_RootOrder
@@ -1416,6 +1451,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GrassyPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 731383664074894149, guid: 71caaa524c4b6f140a6dae8b73e6d225,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5581938585561692309, guid: 71caaa524c4b6f140a6dae8b73e6d225,
         type: 3}
@@ -1746,6 +1786,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformWithSpikes
       objectReference: {fileID: 0}
+    - target: {fileID: 1328947496289787946, guid: 90936bdc90c33e447aae413cb688f2e2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 8299574032414948600, guid: 90936bdc90c33e447aae413cb688f2e2,
         type: 3}
       propertyPath: m_RootOrder
@@ -1869,6 +1914,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FullGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472497064719681288, guid: 0798af3ea3b81bf428f599f7c5a88f88,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0798af3ea3b81bf428f599f7c5a88f88, type: 3}
