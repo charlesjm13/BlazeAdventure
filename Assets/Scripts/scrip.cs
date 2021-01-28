@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Threading;
+using UnityEngine.SceneManagement;
 
 
 public class scrip : MonoBehaviour
@@ -65,12 +66,11 @@ public class scrip : MonoBehaviour
         distanceGround = 0.1f;
         if(!Physics2D.BoxCast(boxCollider2D.bounds.center, boxCollider2D.bounds.size, 0f, -Vector2.up, distanceGround, groundLayerMask)){
             isGrounded = false;
-            Debug.Log("Air");
+            //Debug.Log("Air");
             //Debug.DrawRay(transform.position, -Vector3.up, Color.green); 
         }
         else{
             isGrounded = true;
-            Debug.Log("True");
         }
     }
 	// private void OnTriggerEnter2D(Collider2D collider){
@@ -94,16 +94,14 @@ public class scrip : MonoBehaviour
 //     private void OnTriggerExit2D(Collider2D collider){
         
 //     }
-    // private void OnCollisionEnter2D(Collision2D collision){
-    //     if(collision.gameObject.CompareTag("Ground")){
-    //         Debug.Log("Grounded");
-    //         isGrounded=true;
-    //     }
-    // }
-    // private void OnCollisionExit2D(Collision2D collison){
-    //     isGrounded = false;
-    //     Debug.Log("Air");
-    // }
+    private void OnCollisionEnter2D(Collision2D collision){
+        if(collision.gameObject.CompareTag("Enemy")){
+            StartCoroutine(DoPlayerDeathAnimation());
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collison){
+        
+    }
 // IEnumerator DoEnemyDeathAnimation(GameObject g)
 //  {
 //    //Debug.Log("Animated Wait");
@@ -111,13 +109,15 @@ public class scrip : MonoBehaviour
 //    Destroy(g);
 //    //Debug.Log("This happens 2 seconds later. Tada.");
 //  }
-//  IEnumerator DoPlayerDeathAnimation()
-//  {
-//     //Debug.Log("Died Wait");
-//    yield return new WaitForSeconds(2); // wait four seconds.
-//    transform.position = spawnPoint;
-//    ableToMove = true;
-//    rigidbody.isKinematic = false;
-//     animator.SetBool("Died", false);
-//  }
+ IEnumerator DoPlayerDeathAnimation()
+ {
+    //Debug.Log("Died Wait");
+    Time.timeScale = 0;
+    Debug.Log("Entered");
+   yield return new WaitForSecondsRealtime(1); // wait four seconds.
+   SceneManager.LoadScene("FirstLevel");
+   Debug.Log("Exited");
+   Time.timeScale = 1;
+   
+ }
 }
