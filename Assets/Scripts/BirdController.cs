@@ -5,11 +5,12 @@ using UnityEngine;
 public class BirdController : MonoBehaviour
 {   
     public float MovementSpeed = -8;
-    public Vector3 birdLocation;
+    public Vector3 birdRespawnLocation;
+    public Vector3 birdStartLocation;
     // Start is called before the first frame update
     void Start()
     {
-       this.transform.position = birdLocation;
+       this.transform.position = birdStartLocation;
     }
 
     // Update is called once per frame
@@ -17,12 +18,12 @@ public class BirdController : MonoBehaviour
     {
         if (this.transform.position.x < -10)
         {
-            birdLocation.y += 1;
-            if (birdLocation.y > 4)
+            birdRespawnLocation.y = this.transform.position.y + 1;
+            if (birdRespawnLocation.y > 4)
             {
-                birdLocation.y = -2;
+                birdRespawnLocation.y = -2;
             }
-            this.transform.position = birdLocation;
+            this.transform.position = birdRespawnLocation;
         }
         else
         {
