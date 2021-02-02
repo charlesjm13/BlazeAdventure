@@ -12,6 +12,7 @@ public class KnightControlller : MonoBehaviour
     public int size = 12;
     private Vector3 theScale;
     private BoxCollider2D boxCollider2D;
+    public Animator anim;
     public Animator animator;
     private bool movingLeft = true;
     private bool slashDone = true;
@@ -82,6 +83,8 @@ public class KnightControlller : MonoBehaviour
         animator.Play("Knight Slash",  -1, 0f);
         yield return new WaitForSeconds(0.75f);
         if (Physics2D.Raycast(boxCollider2D.bounds.center, rayDirection ,2, playerLayerMask)){
+             anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+             anim.Play("Player Death",  -1, 0f);
              Time.timeScale = 0;
              yield return new WaitForSecondsRealtime(1);
              SceneManager.LoadScene("FirstLevel");

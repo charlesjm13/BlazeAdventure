@@ -73,27 +73,24 @@ public class scrip : MonoBehaviour
             isGrounded = true;
         }
     }
-	// private void OnTriggerEnter2D(Collider2D collider){
-    //     if (collider.gameObject.CompareTag("StompArea")){
-    //         GameObject body = collider.gameObject;
-    //         GameObject bodyParent = body.transform.parent.gameObject;
-    //         Animator deathAnimator = bodyParent.GetComponent<Animator>();
-    //         deathAnimator.SetBool("IsDead", true);
-    //         rigidbody.velocity = new Vector2(rigidbody.velocity.x, JumpForce);
-    //         StartCoroutine(DoEnemyDeathAnimation(bodyParent));
-    //     }
-    //     if(collider.gameObject.CompareTag("EnemyHitZone") || collider.gameObject.CompareTag("PitFall")){
-    //         //Debug.Log("Deaded");
-    //         animator.SetBool("Died", true);
-    //         ableToMove = false;
-    //         rigidbody.isKinematic = true;
-    //         StartCoroutine(DoPlayerDeathAnimation());
-    //     }
+	private void OnTriggerEnter2D(Collider2D collider){
+        if (collider.gameObject.CompareTag("StompZone")){
+            GameObject body = collider.gameObject;
+            GameObject bodyParent = body.transform.parent.gameObject;
+            rigidbody.velocity = new Vector2(rigidbody.velocity.x, JumpForce);
+            StartCoroutine(DoEnemyDeathAnimation(bodyParent));
+            
+        }
+        if(collider.gameObject.CompareTag("Enemy")){
+            //Debug.Log("Deaded");
+            
+            StartCoroutine(DoPlayerDeathAnimation());
+        }
         
-    // }
-//     private void OnTriggerExit2D(Collider2D collider){
+    }
+    private void OnTriggerExit2D(Collider2D collider){
         
-//     }
+    }
     private void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Spikes"))
         {
@@ -103,21 +100,22 @@ public class scrip : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collison){
         
     }
-// IEnumerator DoEnemyDeathAnimation(GameObject g)
-//  {
-//    //Debug.Log("Animated Wait");
-//    yield return new WaitForSeconds(0.5f); // wait for two seconds.
-//    Destroy(g);
-//    //Debug.Log("This happens 2 seconds later. Tada.");
-//  }
+IEnumerator DoEnemyDeathAnimation(GameObject g)
+ {
+   //Debug.Log("Animated Wait");
+   yield return new WaitForSeconds(0.5f); // wait for two seconds.
+   Destroy(g);
+   //Debug.Log("This happens 2 seconds later. Tada.");
+ }
  IEnumerator DoPlayerDeathAnimation()
  {
     //Debug.Log("Died Wait");
+    animator.Play("Player Death",  -1, 0f);
     Time.timeScale = 0;
-    Debug.Log("Entered");
+    //Debug.Log("Entered");
    yield return new WaitForSecondsRealtime(1); // wait four seconds.
    SceneManager.LoadScene("FirstLevel");
-   Debug.Log("Exited");
+   //Debug.Log("Exited");
    Time.timeScale = 1;
    
  }

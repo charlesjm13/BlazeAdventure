@@ -1,7 +1,115 @@
 fileFormatVersion: 2
 guid: a4b09f49b9fa7ce41b06f9f74526dde0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7734176945531987097
+    second: classic-pegleg_idle
+  - first:
+      213: 7678200370087265546
+    second: classic-pegleg_1
+  - first:
+      213: -5158796035256660801
+    second: classic-pegleg_2
+  - first:
+      213: -2746975669424750454
+    second: classic-pegleg_3
+  - first:
+      213: 2564450171623124169
+    second: classic-pegleg_shoot
+  - first:
+      213: 94523832078318536
+    second: classic-pegleg_5
+  - first:
+      213: -3986692573553152466
+    second: classic-pegleg_6
+  - first:
+      213: -6122332909456159513
+    second: classic-pegleg_7
+  - first:
+      213: 5004028874424062953
+    second: classic-pegleg_8
+  - first:
+      213: 3636133948172292278
+    second: classic-pegleg_9
+  - first:
+      213: -6646233310332011547
+    second: classic-pegleg_shoot1
+  - first:
+      213: 2319236975856150483
+    second: classic-pegleg_11
+  - first:
+      213: 5013720866785640648
+    second: classic-pegleg_idle1
+  - first:
+      213: -113910132990020684
+    second: classic-pegleg_13
+  - first:
+      213: 8318521590370010261
+    second: classic-pegleg_14
+  - first:
+      213: 6027053823949643010
+    second: classic-pegleg_15
+  - first:
+      213: 7206484665111914951
+    second: classic-pegleg_shoot2
+  - first:
+      213: -5646413503845549373
+    second: classic-pegleg_17
+  - first:
+      213: 8686566305769770124
+    second: classic-pegleg_18
+  - first:
+      213: -6716038505860096869
+    second: classic-pegleg_19
+  - first:
+      213: 5624757285035671013
+    second: classic-pegleg_20
+  - first:
+      213: -6612996320513150024
+    second: classic-pegleg_21
+  - first:
+      213: -2779003307822184131
+    second: classic-pegleg_22
+  - first:
+      213: 5682701684129423499
+    second: classic-pegleg_23
+  - first:
+      213: 6457513463140707050
+    second: classic-pegleg_24
+  - first:
+      213: 4746966142853196078
+    second: classic-pegleg_25
+  - first:
+      213: 3422977394272404030
+    second: classic-pegleg_26
+  - first:
+      213: -6464965105546860593
+    second: classic-pegleg_27
+  - first:
+      213: 1030649765942271917
+    second: classic-pegleg_28
+  - first:
+      213: -4623436778619333268
+    second: classic-pegleg_29
+  - first:
+      213: 2420955467424889919
+    second: classic-pegleg_30
+  - first:
+      213: -2779862234501779840
+    second: classic-pegleg_31
+  - first:
+      213: -8167197880424573910
+    second: classic-pegleg_32
+  - first:
+      213: 6676779745376960294
+    second: classic-pegleg_33
+  - first:
+      213: -1850088084589528469
+    second: classic-pegleg_34
+  - first:
+      213: -1964020830992793123
+    second: classic-pegleg_35
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +139,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +148,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +179,789 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: classic-pegleg_idle
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 151
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994237c54f0555b60800000000000000
+      internalID: 7734176945531987097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 151
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0503554e827e8a60800000000000000
+      internalID: 7678200370087265546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 151
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc45d1a6564868b0800000000000000
+      internalID: -5158796035256660801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_3
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 151
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a800c49ce28c0e9d0800000000000000
+      internalID: -2746975669424750454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_shoot
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 153
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc29c318d1c69320800000000000000
+      internalID: 2564450171623124169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 151
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb36d9ace0df4100800000000000000
+      internalID: 94523832078318536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 123
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e2dac0a3c6ca8c0800000000000000
+      internalID: -3986692573553152466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 121
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec8e2708aa190ba0800000000000000
+      internalID: -6122332909456159513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_8
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 121
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e318d1bfb1e17540800000000000000
+      internalID: 5004028874424062953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_9
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 121
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b05c809f84267230800000000000000
+      internalID: 3636133948172292278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_shoot1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 123
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebba4b7406d3c3a0800000000000000
+      internalID: -6646233310332011547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_11
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 123
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d76bdfddb59f2020800000000000000
+      internalID: 2319236975856150483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_idle1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 94
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0c8b38090549540800000000000000
+      internalID: 5013720866785640648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_13
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 91
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3ffca665f4b6ef0800000000000000
+      internalID: -113910132990020684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_14
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 91
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5940c622053517370800000000000000
+      internalID: 8318521590370010261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 91
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d9daa258564a350800000000000000
+      internalID: 6027053823949643010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_shoot2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 93
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9ab4f0f93920460800000000000000
+      internalID: 7206484665111914951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 91
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca315095d8e3a1b0800000000000000
+      internalID: -5646413503845549373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 61
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cc84d1802ec8870800000000000000
+      internalID: 8686566305769770124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_19
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 61
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c1d50ef86dbc2a0800000000000000
+      internalID: -6716038505860096869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_20
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 61
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed775213f62f0e40800000000000000
+      internalID: 5624757285035671013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_21
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 61
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b339d632eae934a0800000000000000
+      internalID: -6612996320513150024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 61
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d398f9f173ffe69d0800000000000000
+      internalID: -2779003307822184131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_23
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 61
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b806c0fc2130dde40800000000000000
+      internalID: 5682701684129423499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeaedc60842bd9950800000000000000
+      internalID: 6457513463140707050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_25
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 31
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2922917e8c90e140800000000000000
+      internalID: 4746966142853196078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 31
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e328ccbedcbd08f20800000000000000
+      internalID: 3422977394272404030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_27
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 31
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc765964d74d746a0800000000000000
+      internalID: -6464965105546860593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_28
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 31
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf14d2608a9d4e00800000000000000
+      internalID: 1030649765942271917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_29
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 31
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c651be0feb046dfb0800000000000000
+      internalID: -4623436778619333268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c76ecbb26f89120800000000000000
+      internalID: 2420955467424889919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_31
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e6ffba602fb69d0800000000000000
+      internalID: -2779862234501779840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_32
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2458f6acc848ae80800000000000000
+      internalID: -8167197880424573910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_33
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f77b6adcfa8ac50800000000000000
+      internalID: 6676779745376960294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_34
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6abbd270ba2356e0800000000000000
+      internalID: -1850088084589528469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: classic-pegleg_35
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd10535c5756eb4e0800000000000000
+      internalID: -1964020830992793123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
