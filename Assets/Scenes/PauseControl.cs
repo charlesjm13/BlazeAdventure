@@ -8,7 +8,7 @@ public class PauseControl : MonoBehaviour
 
     public void ButtonResume()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(1);
     }
 
     public void ButtonSettings()
