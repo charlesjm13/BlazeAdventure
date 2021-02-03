@@ -7,6 +7,7 @@ public class BirdController : MonoBehaviour
     public float MovementSpeed = -8;
     public Vector3 birdRespawnLocation;
     public Vector3 birdStartLocation;
+    public int birdStopLocation;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class BirdController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.transform.position.x < -10)
+        if (this.transform.position.x <= this.birdStopLocation)
         {
             birdRespawnLocation.y = this.transform.position.y + 1;
             if (birdRespawnLocation.y > 4)
