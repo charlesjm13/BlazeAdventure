@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7935354128666984146}
   m_Layer: 0
   m_Name: spikes (3)
-  m_TagString: Untagged
+  m_TagString: Spikes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,10 +137,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 373801356585361518, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485047592174252385, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spikes
+      objectReference: {fileID: 0}
     - target: {fileID: 6902979480024774694, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
         type: 3}
       propertyPath: m_Name
-      value: SpikeTrap
+      value: SpikeTrap Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902979480024774694, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800438921584116408, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spikes
       objectReference: {fileID: 0}
     - target: {fileID: 8019770578804884211, guid: e2d39ce9d76648346aa49b0bca5c2b7f,
         type: 3}
