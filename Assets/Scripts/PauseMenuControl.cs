@@ -3,12 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseControl : MonoBehaviour
+public class PauseMenuControl : MonoBehaviour
 {
+    //public static bool PauseGame = false;
+
+    public GameObject pauseMenu;
+
+    public void ButtonPause()
+    {
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0f;
+        // PauseGame = true;
+    }
 
     public void ButtonResume()
     {
-        SceneManager.LoadScene(1);
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+        // PauseGame = false;
     }
 
     public void ButtonSettings()
@@ -25,6 +37,4 @@ public class PauseControl : MonoBehaviour
     {
         Application.Quit();
     }
-
-   
 }

@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Spikes
   - Collectibles
+  - StompZone
   layers:
   - Default
   - TransparentFX

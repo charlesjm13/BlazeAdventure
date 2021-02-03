@@ -7,6 +7,6 @@ public class Trophy : MonoBehaviour
 {
     public void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(3);
     }
 }
