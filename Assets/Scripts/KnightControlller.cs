@@ -16,11 +16,14 @@ public class KnightControlller : MonoBehaviour
     public Animator animator;
     private bool movingLeft = true;
     private bool slashDone = true;
+    public AudioClip slashSound;
+    AudioSource audioSource;
     void Start()
     {
         theScale = transform.localScale;
         boxCollider2D = transform.GetComponent<BoxCollider2D>();
         tempSpeed = MovementSpeed;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -81,6 +84,7 @@ public class KnightControlller : MonoBehaviour
     IEnumerator KillWait(){
         MovementSpeed = 0;
         animator.Play("Knight Slash",  -1, 0f);
+        audioSource.PlayOneShot(slashSound, 1);
         yield return new WaitForSeconds(0.75f);
         if (Physics2D.Raycast(boxCollider2D.bounds.center, rayDirection ,2, playerLayerMask)){
              anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();

@@ -24,18 +24,23 @@ public class scrip : MonoBehaviour
     //public bool ableToMove = true;
     //public GameObject killed;
     //public Collision2D collison;
+    public AudioClip grabBag;
+    public AudioClip jump;
+    //public AudioClip deathMusic;
+    AudioSource audioSource;
 
 	public void Start(){
         rigidbody = GetComponent<Rigidbody2D>();
         originalConstraints = rigidbody.constraints;
         boxCollider2D = transform.GetComponent<BoxCollider2D>();
+        audioSource = GetComponent<AudioSource>();
 	}
 
 	public void Update(){
         //if(ableToMove){
         
         if(Input.GetButtonDown("Jump" )&& isGrounded){
-
+                audioSource.PlayOneShot(jump, 1);
                 rigidbody.velocity = new Vector2(rigidbody.velocity.x, JumpForce);
                 isGrounded = false;
                 animator.Play("Player Jump",  -1, 0f);
@@ -86,6 +91,10 @@ public class scrip : MonoBehaviour
             
             StartCoroutine(DoPlayerDeathAnimation());
         }
+        if(collider.gameObject.CompareTag("Collectibles")){
+            Debug.Log("Collected");
+            audioSource.PlayOneShot(grabBag, 1);
+        }
         
     }
     private void OnTriggerExit2D(Collider2D collider){
@@ -111,6 +120,8 @@ IEnumerator DoEnemyDeathAnimation(GameObject g)
  {
     //Debug.Log("Died Wait");
     animator.Play("Player Death",  -1, 0f);
+    //audioSource.Stop();
+    //audioSource.PlayOneShot(deathMusic, 1);    
     Time.timeScale = 0;
     //Debug.Log("Entered");
    yield return new WaitForSecondsRealtime(1); // wait four seconds.
