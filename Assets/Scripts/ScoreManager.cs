@@ -18,7 +18,21 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (bagAmount == 4)
+        {
+            bagAmount -= 4;
+            
+            PlayerLife.currentLife += 1;
+            PlayerLife.Life = PlayerLife.currentLife;
+            LifeManager.lifeAmount = PlayerLife.currentLife;
+        }
         text.text = bagAmount.ToString();
+
     }
+    
+    
+        
+    
+    
 }
+
