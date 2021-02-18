@@ -11,8 +11,12 @@ public class PirateController : MonoBehaviour
     public GameObject MusketBallPrefab;
     public Animator animator;
     private bool shotDone= true;
+    public AudioClip shotSound;
+    AudioSource audioSource;
+
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         boxCollider2D = transform.GetComponent<BoxCollider2D>();
     }
 
@@ -30,10 +34,11 @@ public class PirateController : MonoBehaviour
         }
     }
     IEnumerator ShotWait(){
-            animator.SetBool("Shot", false);
+            //animator.SetBool("Shot", false);
             animator.Play("Pirate Shoot",  -1, 0f);
+            audioSource.PlayOneShot(shotSound, 1);
             yield return new WaitForSeconds(0.5f);
-            animator.SetBool("Shot", true);
+            //animator.SetBool("Shot", true);
             Instantiate(MusketBallPrefab, ShootPoint.position, ShootPoint.rotation);
             yield return new WaitForSeconds(5);
             shotDone = true;
