@@ -9,8 +9,7 @@ public class PayerScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentScore = score;
-        KillManager.KillAmount = currentScore;
+        
     }
 
     // Update is called once per frame

@@ -12,23 +12,31 @@ public class PlayerHP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = 0;
         healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetHealth(currentHealth);
     }
 
     // Update is called once per frame
-    void OnCollisionEnter2D(Collision2D coll)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (coll.gameObject.CompareTag ("Enemy") || coll.gameObject.CompareTag("Spikes"))
+        if (other.gameObject.CompareTag("Collectibles"))
         {
-            TakeDamage(4);
+            TakeDamage(1);
         }
     }
 
     void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-
+        currentHealth += damage;
         healthBar.SetHealth(currentHealth);
+        if(currentHealth == 4)
+        {
+            PlayerLife.currentLife += 1;
+            PlayerLife.Life = PlayerLife.currentLife;
+            LifeManager.lifeAmount = PlayerLife.currentLife;
+            currentHealth = 0;
+            healthBar.SetHealth(currentHealth);
+        }
     }
 }
