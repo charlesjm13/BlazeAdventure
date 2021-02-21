@@ -34,6 +34,7 @@ public class PlayerLife : MonoBehaviour
         if (Life <= 0)
         {
             SceneManager.LoadScene(5);
+            Time.timeScale = 1;
         }
         else
         {
