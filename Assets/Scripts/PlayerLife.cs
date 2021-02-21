@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
-    public static int Life = 4;
+    public static int Life = 2;
     public static int currentLife;
     
     // Start is called before the first frame update
@@ -30,7 +31,14 @@ public class PlayerLife : MonoBehaviour
         
             currentLife -= death;
             Life -= death;
+        if (Life <= 0)
+        {
+            SceneManager.LoadScene("GameOverScene");
+        }
+        else
+        {
             LifeManager.lifeAmount = currentLife;
+        }
         
     }
 
