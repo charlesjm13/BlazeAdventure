@@ -32957,6 +32957,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrabBag
       objectReference: {fileID: 0}
+    - target: {fileID: 8539711395828679564, guid: 1fbc2d6e4d8208d40b609df9eaa170ae,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8539711395828679565, guid: 1fbc2d6e4d8208d40b609df9eaa170ae,
         type: 3}
       propertyPath: audioSource
@@ -35259,6 +35264,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3572569069035802363, guid: 5cb0272f0330c4c3cbe3977a21e40494,
+        type: 3}
+      propertyPath: Grabbag
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3572569069035802363, guid: 5cb0272f0330c4c3cbe3977a21e40494,
         type: 3}
       propertyPath: healthBar

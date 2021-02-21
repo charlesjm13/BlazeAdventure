@@ -107,8 +107,7 @@ public class scrip : MonoBehaviour
         if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Spikes"))
         {
             StartCoroutine(DoPlayerDeathAnimation());
-            PayerScore.score = 0;
-            PayerScore.currentScore = 0;
+            
         }
     }
     private void OnCollisionExit2D(Collision2D collison){

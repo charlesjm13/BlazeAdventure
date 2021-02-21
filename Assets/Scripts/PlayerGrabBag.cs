@@ -9,7 +9,7 @@ public class PlayerGrabBag : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScoreManager.bagAmount = StartingBag;
+        //ScoreManager.bagAmount = StartingBag;
     }
 
     
