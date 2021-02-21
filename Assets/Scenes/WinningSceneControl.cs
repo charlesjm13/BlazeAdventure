@@ -12,7 +12,7 @@ public class WinningSceneControl : MonoBehaviour
 
     public void ButtonLeaderBoard()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(4);
     }
 
     public void ButtonQuit()

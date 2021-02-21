@@ -23,10 +23,7 @@ public class PauseMenuControl : MonoBehaviour
         // PauseGame = false;
     }
 
-    public void ButtonSettings()
-    {
-        SceneManager.LoadScene(2);
-    }
+  
 
     public void ButtonMainMenu()
     {

@@ -33,7 +33,7 @@ public class PlayerLife : MonoBehaviour
             Life -= death;
         if (Life <= 0)
         {
-            SceneManager.LoadScene("GameOverScene");
+            SceneManager.LoadScene(5);
         }
         else
         {

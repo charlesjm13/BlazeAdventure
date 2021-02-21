@@ -10,10 +10,10 @@ public class MenuControl : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void ButtonSettings()
+   /* public void ButtonSettings()
     {
         SceneManager.LoadScene(2);
-    }
+    }*/
 
     public void ButtonQuit()
     {
@@ -22,6 +22,6 @@ public class MenuControl : MonoBehaviour
 
     public void ButtonCredits()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 }
