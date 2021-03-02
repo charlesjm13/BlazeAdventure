@@ -6845,6 +6845,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5049570700999483119, guid: d592b998cf4904f5ab9f5cc394f9fc5b,
         type: 3}
+      propertyPath: MovementSpeed
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5049570700999483119, guid: d592b998cf4904f5ab9f5cc394f9fc5b,
+        type: 3}
       propertyPath: birdStopLocation
       value: 113
       objectReference: {fileID: 0}
@@ -18858,6 +18863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bird w Stomp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5049570700999483119, guid: d592b998cf4904f5ab9f5cc394f9fc5b,
+        type: 3}
+      propertyPath: MovementSpeed
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5049570700999483119, guid: d592b998cf4904f5ab9f5cc394f9fc5b,
         type: 3}
@@ -31950,6 +31960,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bird w Stomp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5049570700999483119, guid: d592b998cf4904f5ab9f5cc394f9fc5b,
+        type: 3}
+      propertyPath: MovementSpeed
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5049570700999483119, guid: d592b998cf4904f5ab9f5cc394f9fc5b,
         type: 3}
