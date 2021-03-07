@@ -33,6 +33,7 @@ public class PlayerLife : MonoBehaviour
             Life -= death;
         if (Life <= 0)
         {
+            PlayerPrefs.DeleteAll();
             SceneManager.LoadScene(5);
             Time.timeScale = 1;
         }

@@ -17,6 +17,7 @@ public class scrip : MonoBehaviour
     public Animator animator;
     public RigidbodyConstraints2D originalConstraints;
     public bool isGrounded = false;
+    public bool checkTriggerd =false;
     //public LayerMask groundLayers;
     private Rigidbody2D rigidbody;
     public float fallMultiplier = -5;
@@ -26,6 +27,7 @@ public class scrip : MonoBehaviour
     //public Collision2D collison;
     public AudioClip grabBag;
     public AudioClip jump;
+    public Vector2 spawnPoint;
     //public AudioClip deathMusic;
     AudioSource audioSource;
 
@@ -34,6 +36,10 @@ public class scrip : MonoBehaviour
         originalConstraints = rigidbody.constraints;
         boxCollider2D = transform.GetComponent<BoxCollider2D>();
         audioSource = GetComponent<AudioSource>();
+        float playerPositionX = PlayerPrefs.GetFloat("playerPositionX");
+        float playerPositionY = PlayerPrefs.GetFloat("playerPositionY");
+        spawnPoint = new Vector2(playerPositionX, playerPositionY);
+        this.transform.position = spawnPoint;
 	}
 
 	public void Update(){
@@ -60,6 +66,13 @@ public class scrip : MonoBehaviour
             theScale.x = 100;
             transform.localScale = theScale;
         }
+        if(Input.GetKeyDown(KeyCode.F) && checkTriggerd == true){
+                Debug.Log("triggered2");
+                PlayerPrefs.SetFloat("playerPositionX", this.transform.position.x);
+                PlayerPrefs.SetFloat("playerPositionY", this.transform.position.y);
+                PlayerPrefs.Save();
+                spawnPoint = this.transform.position;
+            }
 
 		transform.position += new Vector3(movement,0,0) * Time.deltaTime * MovementSpeed; //movement and movement animation
         animator.SetFloat("Speed", Math.Abs(movement));
@@ -98,10 +111,14 @@ public class scrip : MonoBehaviour
             Debug.Log("Collected");
             audioSource.PlayOneShot(grabBag, 1);
         }
-        
+        if(collider.gameObject.CompareTag("Checkpoint")){
+            Debug.Log("triggered1");
+            checkTriggerd = true;
+        }
     }
+    
     private void OnTriggerExit2D(Collider2D collider){
-        
+        checkTriggerd = false;
     }
     private void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Spikes"))
