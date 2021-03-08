@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
-    public static int Life = 2;
+    public static int Life = 3;
     public static int currentLife;
     
     // Start is called before the first frame update
@@ -36,6 +36,7 @@ public class PlayerLife : MonoBehaviour
             PlayerPrefs.DeleteAll();
             SceneManager.LoadScene(5);
             Time.timeScale = 1;
+            Life = 2;
         }
         else
         {
