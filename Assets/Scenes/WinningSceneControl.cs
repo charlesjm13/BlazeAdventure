@@ -20,5 +20,10 @@ public class WinningSceneControl : MonoBehaviour
         Application.Quit();
     }
 
+    public void ButtonMain()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 
 }
