@@ -30,16 +30,24 @@ public class scrip : MonoBehaviour
     public Vector2 spawnPoint;
     //public AudioClip deathMusic;
     AudioSource audioSource;
+  //public bool checkpointed;
+
+  
 
 	public void Start(){
         rigidbody = GetComponent<Rigidbody2D>();
         originalConstraints = rigidbody.constraints;
         boxCollider2D = transform.GetComponent<BoxCollider2D>();
         audioSource = GetComponent<AudioSource>();
-        float playerPositionX = PlayerPrefs.GetFloat("playerPositionX");
+         float playerPositionX = PlayerPrefs.GetFloat("playerPositionX");
         float playerPositionY = PlayerPrefs.GetFloat("playerPositionY");
+        int checkpointed = PlayerPrefs.GetInt("checkpointed");
+        spawnPoint = this.transform.position;
+        if(checkpointed != 0){
         spawnPoint = new Vector2(playerPositionX, playerPositionY);
         this.transform.position = spawnPoint;
+        }
+    
 	}
 
 	public void Update(){
@@ -71,6 +79,7 @@ public class scrip : MonoBehaviour
                 PlayerPrefs.SetFloat("playerPositionX", this.transform.position.x);
                 PlayerPrefs.SetFloat("playerPositionY", this.transform.position.y);
                 PlayerPrefs.Save();
+                PlayerPrefs.SetInt("checkpointed", 1);
                 spawnPoint = this.transform.position;
             }
 
