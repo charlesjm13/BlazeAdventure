@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuControl : MonoBehaviour
 {
 
-    public void ButtonStart() {
+    /*public void ButtonStart() {
         SceneManager.LoadScene(1);
     }
 
