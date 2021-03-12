@@ -16,7 +16,7 @@ public class Highscore : MonoBehaviour
 
     public void KillScore()
     {
-        int number = KillManager.KillAmount; 
+        int number = PlayerPrefs.GetInt("kills");
         score.text = number.ToString();
 
         if (number > PlayerPrefs.GetInt("HighScore", 0))

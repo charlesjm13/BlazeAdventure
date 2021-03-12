@@ -18,8 +18,8 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        text.text = bagAmount.ToString();
+        int gb = PlayerPrefs.GetInt("grabbags");
+        text.text = gb.ToString();
 
     }
     

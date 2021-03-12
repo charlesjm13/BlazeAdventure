@@ -6,7 +6,16 @@ using UnityEngine.SceneManagement;
 public class Trophy : MonoBehaviour
 {   
     void Awake(){
-        PlayerPrefs.DeleteAll();
+            int highkills = PlayerPrefs.GetInt("kills");
+            PlayerPrefs.SetInt("highkills", highkills);
+            PlayerPrefs.Save();
+            PlayerPrefs.DeleteKey("lifeAmount");
+            PlayerPrefs.DeleteKey("playerPositionX");
+            PlayerPrefs.DeleteKey("playerPositionY");
+            PlayerPrefs.DeleteKey("died");
+            PlayerPrefs.DeleteKey("checkpointed");
+            PlayerPrefs.DeleteKey("kills");
+            PlayerPrefs.DeleteKey("grabbags");
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
