@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Threading;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class scrip : MonoBehaviour
@@ -30,16 +31,22 @@ public class scrip : MonoBehaviour
     public Vector2 spawnPoint;
     //public AudioClip deathMusic;
     AudioSource audioSource;
+    public Image checkpointPopUp;
+    
   //public bool checkpointed;
 
   
 
 	public void Start(){
+        int died = PlayerPrefs.GetInt("died");
+        if(died == 0){
+            PlayerPrefs.SetInt("lifeAmount", 3);
+        }
         rigidbody = GetComponent<Rigidbody2D>();
         originalConstraints = rigidbody.constraints;
         boxCollider2D = transform.GetComponent<BoxCollider2D>();
         audioSource = GetComponent<AudioSource>();
-         float playerPositionX = PlayerPrefs.GetFloat("playerPositionX");
+        float playerPositionX = PlayerPrefs.GetFloat("playerPositionX");
         float playerPositionY = PlayerPrefs.GetFloat("playerPositionY");
         int checkpointed = PlayerPrefs.GetInt("checkpointed");
         spawnPoint = this.transform.position;
@@ -79,7 +86,10 @@ public class scrip : MonoBehaviour
                 PlayerPrefs.SetFloat("playerPositionX", this.transform.position.x);
                 PlayerPrefs.SetFloat("playerPositionY", this.transform.position.y);
                 PlayerPrefs.Save();
+                checkpointPopUp.gameObject.SetActive(true);
+                StartCoroutine(CheckpointWait());
                 PlayerPrefs.SetInt("checkpointed", 1);
+
                 spawnPoint = this.transform.position;
             }
 
@@ -132,6 +142,7 @@ public class scrip : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Spikes"))
         {
+            //Debug.Log("Died via Collision");
             StartCoroutine(DoPlayerDeathAnimation());
             
         }
@@ -146,16 +157,28 @@ IEnumerator DoEnemyDeathAnimation(GameObject g)
    Destroy(g);
    //Debug.Log("This happens 2 seconds later. Tada.");
  }
+ IEnumerator CheckpointWait()
+ {
+   //Debug.Log("Animated Wait");
+   yield return new WaitForSeconds(1.5f); // wait for two seconds.
+   checkpointPopUp.gameObject.SetActive(false);
+   //Debug.Log("This happens 2 seconds later. Tada.");
+ }
  IEnumerator DoPlayerDeathAnimation()
  {
     //Debug.Log("Died Wait");
     animator.Play("Player Death",  -1, 0f);
+    int temp = PlayerPrefs.GetInt("lifeAmount");
+    PlayerPrefs.SetInt("lifeAmount", temp - 1);
+    PlayerPrefs.SetInt("died", 1);
+    PlayerPrefs.Save();
     //audioSource.Stop();
     //audioSource.PlayOneShot(deathMusic, 1);    
     Time.timeScale = 0;
     //Debug.Log("Entered");
    yield return new WaitForSecondsRealtime(1); // wait four seconds.
-   SceneManager.LoadScene("FirstLevel");
+   this.transform.position = spawnPoint;
+   //SceneManager.LoadScene("FirstLevel");
    //Debug.Log("Exited");
    Time.timeScale = 1;
    

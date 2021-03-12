@@ -32,9 +32,9 @@ public class PlayerHP : MonoBehaviour
         healthBar.SetHealth(currentHealth);
         if(currentHealth == 4)
         {
-            PlayerLife.currentLife += 1;
-            PlayerLife.Life = PlayerLife.currentLife;
-            LifeManager.lifeAmount = PlayerLife.currentLife;
+            int temp = PlayerPrefs.GetInt("lifeAmount");
+            PlayerPrefs.SetInt("lifeAmount", temp+1);
+            PlayerPrefs.Save();
             currentHealth = 0;
             healthBar.SetHealth(currentHealth);
         }
