@@ -15,10 +15,10 @@ public class PayerScore : MonoBehaviour
     // Update is called once per frame
     
 
-    void kill(int amount)
-    {
-        currentScore += amount;
-        score += amount;
-        KillManager.KillAmount = currentScore;
-    }
+    //void kill(int amount)
+    //{
+    //    currentScore += amount;
+    //    score += amount;
+    //    KillManager.KillAmount = currentScore;
+    //}
 }
