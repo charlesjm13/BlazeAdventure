@@ -9,6 +9,8 @@ TagManager:
   - Spikes
   - Collectibles
   - StompZone
+  - Checkpoint
+  - Timer
   layers:
   - Default
   - TransparentFX
