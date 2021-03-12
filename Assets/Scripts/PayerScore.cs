@@ -17,8 +17,11 @@ public class PayerScore : MonoBehaviour
 
     void kill(int amount)
     {
-        currentScore += amount;
-        score += amount;
-        KillManager.KillAmount = currentScore;
+        //currentScore += amount;
+        //score += amount;
+        int kills = PlayerPrefs.GetInt("kills");
+        PlayerPrefs.SetInt("kills", kills + 1);
+        PlayerPrefs.Save();
+        //KillManager.KillAmount = currentScore;
     }
 }

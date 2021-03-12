@@ -9,7 +9,9 @@ public class grabbag : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player")){
-        ScoreManager.bagAmount += 1;
+        int grab = PlayerPrefs.GetInt("grabbags");    
+        PlayerPrefs.SetInt("grabbags" , grab + 1);
+        PlayerPrefs.Save();
         Destroy(gameObject);
         }
     }

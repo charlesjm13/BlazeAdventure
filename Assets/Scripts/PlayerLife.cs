@@ -22,8 +22,18 @@ public class PlayerLife : MonoBehaviour
             //Life -= death;
             currentLife = PlayerPrefs.GetInt("lifeAmount");
         if (currentLife <= 0)
-        {
-            PlayerPrefs.DeleteAll();
+        {   
+            int highkills = PlayerPrefs.GetInt("kills");
+            PlayerPrefs.SetInt("highkills", highkills);
+            PlayerPrefs.Save();
+            PlayerPrefs.DeleteKey("lifeAmount");
+            PlayerPrefs.DeleteKey("playerPositionX");
+            PlayerPrefs.DeleteKey("playerPositionY");
+            PlayerPrefs.DeleteKey("died");
+            PlayerPrefs.DeleteKey("checkpointed");
+            //PlayerPrefs.DeleteKey("kills");
+            PlayerPrefs.DeleteKey("grabBags");
+           
             SceneManager.LoadScene(5);
             Time.timeScale = 1;
             //Life = 3;
