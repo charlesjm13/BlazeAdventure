@@ -17,7 +17,7 @@ public class KillManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        text.text = KillAmount.ToString();
+        int ka = PlayerPrefs.GetInt("kills");
+        text.text = ka.ToString();
     }
 }

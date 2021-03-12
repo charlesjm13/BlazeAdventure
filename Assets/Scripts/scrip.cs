@@ -116,9 +116,9 @@ public class scrip : MonoBehaviour
             GameObject bodyParent = body.transform.parent.gameObject;
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, JumpForce);
             StartCoroutine(DoEnemyDeathAnimation(bodyParent));
-            PayerScore.currentScore += 1;
-            PayerScore.score += 1;
-            KillManager.KillAmount = PayerScore.currentScore;
+            int kills = PlayerPrefs.GetInt("kills");
+            PlayerPrefs.SetInt("kills", kills + 1);
+            PlayerPrefs.Save();
 
         }
         if(collider.gameObject.CompareTag("Enemy")){
