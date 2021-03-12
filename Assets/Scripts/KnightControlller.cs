@@ -88,6 +88,10 @@ public class KnightControlller : MonoBehaviour
         yield return new WaitForSeconds(0.75f);
         if (Physics2D.Raycast(boxCollider2D.bounds.center, rayDirection ,2, playerLayerMask)){
              anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+             int temp = PlayerPrefs.GetInt("lifeAmount");
+             PlayerPrefs.SetInt("lifeAmount", temp - 1);
+             PlayerPrefs.SetInt("died", 1);
+             PlayerPrefs.Save();
              anim.Play("Player Death",  -1, 0f);
              Time.timeScale = 0;
              yield return new WaitForSecondsRealtime(1);

@@ -11,13 +11,14 @@ public class LifeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        lifeAmount = PlayerPrefs.GetInt("lifeAmount");
         text = GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        lifeAmount = PlayerPrefs.GetInt("lifeAmount");
         text.text = lifeAmount.ToString();
     }
 }
