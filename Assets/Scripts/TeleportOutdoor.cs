@@ -10,7 +10,7 @@ public class TeleportOutdoor : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player")){
-        this.player.transform.position = new Vector3(outdoorLocation.x, outdoorLocation.y, outdoorLocation.z);
+            this.player.transform.position = new Vector3(outdoorLocation.x, outdoorLocation.y, outdoorLocation.z);
         }
     }
 }

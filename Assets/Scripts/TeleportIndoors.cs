@@ -9,6 +9,8 @@ public class TeleportIndoors : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        this.player.transform.position = new Vector3(indoorLocation.x, indoorLocation.y, indoorLocation.z);
+        if (other.gameObject.CompareTag("Player")){
+            this.player.transform.position = new Vector3(indoorLocation.x, indoorLocation.y, indoorLocation.z);
+        }
     }
 }
